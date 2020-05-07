@@ -27,6 +27,9 @@ a:hover {
 
 header {
     background-color: rgba(128,52,54,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color:#FFFECF;
     text-align: center;
     padding: 1em 2em;
@@ -44,7 +47,12 @@ h2 {
     margin-bottom:0;
 }
 
+header img {
+    margin:1em;
+}
+
 #cadance {
+    top:0; left:0;
     position: fixed;
     z-index: -1;
 }
@@ -52,4 +60,30 @@ h2 {
 footer {
     position: absolute;
     bottom:0;
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        background-color: #7A2C2C;
+    }
+    
+    body {
+        color:#FFB5B6;
+    }
+
+    header {
+        background:none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    header {
+        flex-direction: row;
+        padding:1em;
+        text-align: left;
+    }
+
+    header > section {
+        max-width: 300px;
+    }
 }

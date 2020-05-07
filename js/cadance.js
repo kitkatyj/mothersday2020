@@ -1,12 +1,11 @@
-var _c, _x, resizeTimer;
+var _c, _x, _b, resizeTimer;
 var hearts = [];
 var heart = {img:null, size:100, chance:0.05, speed:4};
 var timer = 0;
 
 function init(){
-    console.log("heyo");
-
     _c = document.getElementById("cadance");
+    _b = document.querySelector("body");
     _x = _c.getContext('2d');
 
     heart.img = new Image();
@@ -29,6 +28,8 @@ function resetHearts(){
 function resetSize(){
     _c.width = window.innerWidth;
     _c.height = window.innerHeight;
+    _b.width = window.innerWidth;
+    _b.height = window.innerHeight;
 }
 
 function draw(){
