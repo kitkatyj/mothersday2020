@@ -10,7 +10,7 @@ function init(){
     _x = _c.getContext('2d');
 
     heart.img = new Image();
-    heart.img.src = "/res/heart-sharp.svg";
+    heart.img.src = "res/heart-sharp.svg";
 
     resetSize(); resetHearts();
     window.addEventListener("resize",function(e){
