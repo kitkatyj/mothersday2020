@@ -15,7 +15,7 @@ function init(){
     window.addEventListener("resize",function(e){
         resetHearts();
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(resetSize,250);
+        resizeTimer = setTimeout(resetSize,50);
     });
 
     draw();
