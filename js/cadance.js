@@ -28,8 +28,8 @@ function resetHearts(){
 function resetSize(){
     _c.width = window.innerWidth;
     _c.height = window.innerHeight;
-    _b.width = window.innerWidth;
-    _b.height = window.innerHeight;
+    _b.style.width = window.innerWidth;
+    _b.style.height = window.innerHeight;
 }
 
 function draw(){
